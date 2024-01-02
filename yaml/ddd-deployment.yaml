@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ddd
+  name: ddd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ddd
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: ddd
+    spec:
+      containers:
+      - image: docker.io/tomcat:10.1.17-jdk21-temurin-jammy
+        name: ddd
+---
