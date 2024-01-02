@@ -5,6 +5,7 @@ metadata:
   labels:
     app: ddd
   name: ddd
+  namespace: ddd
 spec:
   replicas: 1
   selector:
